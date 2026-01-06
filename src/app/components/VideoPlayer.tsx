@@ -66,7 +66,7 @@ export function VideoPlayer({ youtubeUrl }: VideoPlayerProps) {
               className="w-full bg-gradient-to-r from-pink-500 to-rose-500 text-white py-4 px-6 rounded-2xl hover:from-pink-600 hover:to-rose-600 transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <Video className="w-6 h-6" />
-              <span className="text-lg">Ver mi dedicatoria</span>
+              <span className="text-lg">Ver el video</span>
             </button>
           </div>
         </div>
@@ -168,7 +168,7 @@ export function VideoPlayer({ youtubeUrl }: VideoPlayerProps) {
 
                 <div className="mt-4 text-center">
                   <p className="text-white text-sm sm:text-base">
-                    Hecho con todo mi amor para ti 💕
+                    Hecho con todo mi amor para vos 💕
                   </p>
                 </div>
               </>
