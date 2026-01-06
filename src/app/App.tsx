@@ -103,7 +103,7 @@ function App() {
   const [passwordError, setPasswordError] = useState(false);
 
   // Fecha límite: 25 de enero 2026 a las 00:00 hora de Buenos Aires (UTC-3)
-  const DEADLINE = new Date('2026-01-25T00:00:00-03:00');
+  const DEADLINE = new Date('2026-01-06T00:00:00-03:00');
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
     e.preventDefault();
