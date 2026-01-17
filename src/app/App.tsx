@@ -38,7 +38,7 @@ const photocardsData = [
     date: '19 de Julio, 2025',
     title: 'Casa Chilee ♥️',
     imageUrl: '/pics/4.jpg',
-    description: `Nuestra aventura en la naturaleza. Escapamos de la ciudad y disfrutamos de la tranquilidad del campo. Reímos, jugamos y nos olvidamos del mundo. Solo existíamos tú y yo.`,
+    description: `Esa fué la primera vez que dormimos juntitos. Sentí tan lindo el calor de tu abrazo, y una paz interna que me dió tanta felicidad. Es desde ese dia, que necesito de tu calor para poder dormir.`,
     passwordLetter: '7'
   },
   {
@@ -54,7 +54,7 @@ const photocardsData = [
     date: '20 de Noviembre, 2025',
     title: 'Casa Yayitaa ♥️',
     imageUrl: '/pics/6.jpg',
-    description: `Ese día especial donde todo fluyó perfectamente. Tus risas llenaban el aire y yo no podía dejar de admirarte. Cada momento contigo se siente como un regalo.`,
+    description: `Mientras pasaban los dias, empecé a conocer las personas mas importantes de tu familia, entre ellas está tu yaya. Una personita muy dulce, amable, me siento tan agradecido de conocerla 💗`,
     passwordLetter: 'D'
   },
   {
@@ -62,7 +62,7 @@ const photocardsData = [
     date: '23 de Noviembre, 2025',
     title: 'Juancito Fest ♥️',
     imageUrl: '/pics/7.jpg',
-    description: `Nuestra selfie favorita. Capturamos la esencia de nuestra relación en una foto: autenticidad, amor y diversión. Cada vez que la veo, sonrío recordando ese momento.`,
+    description: `Ese dia fue inolvidableee. Nos cagamos de risa toda la noche con los chicos fue re lindo. Por mas joditas con los chicos 🤣`,
     passwordLetter: '4'
   },
   {
