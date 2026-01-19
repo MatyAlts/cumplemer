@@ -46,7 +46,7 @@ const photocardsData = [
     date: '26 de Octubre, 2025',
     title: 'Selfie random de IG ♥️',
     imageUrl: '/pics/5.webp',
-    description: `El día en la playa. El sonido de las olas, la arena en nuestros pies y tu sonrisa iluminando todo. Construimos castillos de arena y sueños juntos. Fue un día perfecto.`,
+    description: `Todos los dias disfruto a tu lado, me encanta cuando nos sacamos fotitos, adoro ver lo hermosa que sos y como nos vemos juntitos, con esos ojitos bellos que tenesss, te amo mi amor 💗`,
     passwordLetter: 'h'
   },
   {
