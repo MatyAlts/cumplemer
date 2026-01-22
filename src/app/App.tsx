@@ -191,8 +191,7 @@ function App() {
     
     // Calcular fotos desbloqueadas: 11 - días restantes
     // Esto permite que con 10 días restantes, se desbloquee 1 foto (11-10=1)
-    // Máximo 9 (la 10 solo cuando termine el contador)
-    const unlockedPhotos = Math.min(11 - daysRemaining, 9);
+    const unlockedPhotos = Math.min(11 - daysRemaining, 10);
     
     return unlockedPhotos;
   };
