@@ -70,7 +70,7 @@ const photocardsData = [
     date: '18 de Diciembre, 2025',
     title: 'Cena Sofi ♥️',
     imageUrl: '/pics/8.jpg',
-    description: `Nuestra cita nocturna bajo las estrellas. Las luces de la ciudad nos rodeaban pero solo tenía ojos para ti. Hablamos sobre nuestros sueños y el futuro que queremos construir juntos.`,
+    description: `La noche donde le demostraste a todos que sos la mas hermosa del mundo, esa misma noche que pasamos juntitos los dos, nos veiamos tan preciosos juntos, yo no podía creerlo cuando te vi con ese vestido hermoso 😍 TE AMOOOOO`,
     passwordLetter: 'y'
   },
   {
@@ -78,7 +78,7 @@ const photocardsData = [
     date: '24 de Diciembre, 2025',
     title: 'Nuestra primer navidad ♥️',
     imageUrl: '/pics/9.JPG',
-    description: `Celebrando nuestro amor. Cada día contigo es una celebración, pero este fue especialmente memorable. Brindamos por nosotros, por lo que hemos construido y por todo lo que viene.`,
+    description: `Nuestra primer navidad de muchas juntitos bebé, me siento tan feliz de haber podido compartir una navidad con vos, y quiero que todas las navidades que vengan sean junto a vos, te adoro hermosa 💗`,
     passwordLetter: '!'
   },
   {
@@ -86,7 +86,7 @@ const photocardsData = [
     date: '31 de Diciembre, 2025',
     title: 'Nuestro primer año nuevo ♥️',
     imageUrl: '/pics/10.JPG',
-    description: `¡Hoy es tu día especial! Hemos recorrido este viaje de 10 días juntos, reviviendo nuestros momentos más preciados. Cada foto cuenta una historia, cada recuerdo nos hace más fuertes. Espero que este regalo digital te haga sonreír tanto como tú me haces sonreír cada día. ¡Feliz cumpleaños mi amor! Que este nuevo año de vida esté lleno de amor, risas y nuevos recuerdos juntos.`,
+    description: `Primer año nuevo juntos, estoy tan feliz de haber podido empezar este 2026 con vos, empezar un nuevo año al lado de la persona que cambió mi vida, de la que todos los dias me enamoro mas, un año que fue complicado, donde aprendimos varias cosas de la vida, pero que a pesar de todo seguiste de pie, y estoy tan orgulloso de vos por lo fuerte que sos, gracias por ser la persona que sos y espero poder hacer de tu cumpleaños un dia un poco mas feliz, te amo mucho mi corazon 💗`,
     passwordLetter: '!'
   }
 ];
