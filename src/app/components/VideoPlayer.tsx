@@ -3,10 +3,10 @@ import { Video, X } from 'lucide-react';
 import { useState } from 'react';
 
 interface VideoPlayerProps {
-  youtubeUrl: string;
+  videoUrl: string;
 }
 
-export function VideoPlayer({ youtubeUrl }: VideoPlayerProps) {
+export function VideoPlayer({ videoUrl }: VideoPlayerProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [password, setPassword] = useState('');
@@ -14,12 +14,28 @@ export function VideoPlayer({ youtubeUrl }: VideoPlayerProps) {
 
   // Extraer el ID del video de YouTube
   const getYoutubeId = (url: string) => {
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=|shorts\/)([^#&?]*).*/;
     const match = url.match(regExp);
     return match && match[2].length === 11 ? match[2] : null;
   };
 
-  const videoId = getYoutubeId(youtubeUrl);
+  const getDriveId = (url: string) => {
+    const regExp = /drive\.google\.com\/(?:file\/d\/|open\?id=|uc\?id=)([^/?#&]+)/;
+    const match = url.match(regExp);
+    return match ? match[1] : null;
+  };
+
+  const getYoutubeEmbedUrl = (url: string) => {
+    const id = getYoutubeId(url);
+    return id ? `https://www.youtube.com/embed/${id}?autoplay=1` : null;
+  };
+
+  const getDriveEmbedUrl = (url: string) => {
+    const id = getDriveId(url);
+    return id ? `https://drive.google.com/file/d/${id}/preview` : null;
+  };
+
+  const videoEmbedUrl = getYoutubeEmbedUrl(videoUrl) ?? getDriveEmbedUrl(videoUrl);
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -145,12 +161,12 @@ export function VideoPlayer({ youtubeUrl }: VideoPlayerProps) {
               <>
                 <div className="relative bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 rounded-3xl p-2 shadow-2xl">
                   <div className="bg-black rounded-2xl overflow-hidden">
-                    <div className="aspect-video">
-                      {videoId ? (
+                    <div className="aspect-[9/16]">
+                      {videoEmbedUrl ? (
                         <iframe
                           width="100%"
                           height="100%"
-                          src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                          src={videoEmbedUrl}
                           title="Video dedicatoria"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -159,7 +175,7 @@ export function VideoPlayer({ youtubeUrl }: VideoPlayerProps) {
                         />
                       ) : (
                         <div className="flex items-center justify-center h-full text-white">
-                          <p>URL de YouTube inválida</p>
+                          <p>URL de video inválida</p>
                         </div>
                       )}
                     </div>

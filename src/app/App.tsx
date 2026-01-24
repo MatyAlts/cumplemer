@@ -91,8 +91,8 @@ const photocardsData = [
   }
 ];
 
-// URL del video de YouTube (reemplaza con tu URL)
-const YOUTUBE_VIDEO_URL = 'https://www.youtube.com/watch?v=hDvm5fwMBos';
+// URL del video (reemplaza con tu URL)
+const VIDEO_URL = 'https://drive.google.com/file/d/1aqFV3w9PbuWkZKm-Uh7kYAm7ilLaTQNj/view?usp=sharing';
 
 function App() {
   const [selectedPhoto, setSelectedPhoto] = useState<number | null>(null);
@@ -191,6 +191,7 @@ function App() {
     
     // Calcular fotos desbloqueadas: 11 - días restantes
     // Esto permite que con 10 días restantes, se desbloquee 1 foto (11-10=1)
+    // Máximo 9 (la 10 solo cuando termine el contador)
     const unlockedPhotos = Math.min(11 - daysRemaining, 10);
     
     return unlockedPhotos;
@@ -297,7 +298,7 @@ function App() {
 
         {/* Video del día 10 */}
         {isDay10 && (
-          <VideoPlayer youtubeUrl={YOUTUBE_VIDEO_URL} />
+          <VideoPlayer videoUrl={VIDEO_URL} />
         )}
 
         {/* Mensaje motivacional */}
